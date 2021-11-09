@@ -1,25 +1,16 @@
 import React, { useEffect } from "react";
 import mirador from "mirador";
-
-// class Mirador extends Component {
-//   componentDidMount() {
-//     const { config, plugins } = this.props;
-//     mirador.viewer(config, plugins);
-//   }
-//   render() {
-//     const { config } = this.props;
-//     return <div id={config.id} />;
-//   }
-// }
+import annotationPlugins from "mirador-annotations/es/index";
+import LocalStorageAdapter from "mirador-annotations/es/LocalStorageAdapter";
 
 export default function Mirador(props) {
   const config = {
     id: "mirador",
-    // annotation: {
-    //   adapter: (canvasId) =>
-    //     new LocalStorageAdapter(`localStorage://?canvasId${canvasId}`),
-    //   exportLocalStorageAnnotations: true, // display annotation JSON export button
-    // },
+    annotation: {
+      adapter: (canvasId) =>
+        new LocalStorageAdapter(`localStorage://?canvasId=${canvasId}`),
+      exportLocalStorageAnnotations: true, // display annotation JSON export button
+    },
     window: {
       defaultSideBarPanel: "annotations",
       sideBarOpenByDefault: true,
@@ -37,7 +28,7 @@ export default function Mirador(props) {
     ],
   };
 
-  const plugins = [];
+  const plugins = [...annotationPlugins];
 
   useEffect(() => {
     mirador.viewer(config, plugins);
