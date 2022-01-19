@@ -5,8 +5,12 @@ const MiradorWithNoSSR = dynamic(() => import("../components/Mirador"), {
   ssr: false,
 });
 
-const manifest =
-  "https://sad-leakey-4368a8.netlify.app/img/derivatives/iiif/dc/manifest.json";
+// const manifest =
+//   "https://sad-leakey-4368a8.netlify.app/img/derivatives/iiif/dc/manifest.json";
+
+const manifest = "https://dreamy-jackson-498548.netlify.app/img/derivatives/iiif/dc/manifest.json"
+
+// const manifest = "localhost:4000/img/derivatives/iiif/dc/manifest.json"
 
 export default function DavidCopperfield() {
   return (
