@@ -8,7 +8,7 @@ const MiradorWithNoSSR = dynamic(() => import("../components/Mirador"), {
 // const manifest =
 //   "https://sad-leakey-4368a8.netlify.app/img/derivatives/iiif/dc/manifest.json";
 
-const manifest = "https://dreamy-jackson-498548.netlify.app/img/derivatives/iiif/dc/manifest.json"
+const manifest = "https://karenandscott.github.io/annonatate/manifests/iiif/dc/manifest.json"
 
 // const manifest = "localhost:4000/img/derivatives/iiif/dc/manifest.json"
 
