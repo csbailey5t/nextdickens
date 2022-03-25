@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 // import styles from "../styles/Home.module.css";
 
+import Header from "../components/Header";
+
 export default function Home() {
   return (
     <div className={"container"}>
@@ -15,15 +17,7 @@ export default function Home() {
       <main
         className={"px-20 py-0 flex-1 flex-col justify-center items-center"}
       >
-        <h1
-          className={
-            "m-0 leading-tight text-6xl text-blue-600 hover:underline focus:underline text-center"
-          }
-        >
-          Welcome to the{" "}
-          <a href="https://nextjs.org">Digital Dickens Notes Project!</a>
-        </h1>
-
+        <Header />
         <p className={"text-center leading-tight text-2xl"}>Subtitle</p>
 
         <div
