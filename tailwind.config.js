@@ -1,11 +1,24 @@
+const { blue } = require('tailwindcss/colors');
+
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "ddnpblue": "#6d9fd7",
+        "ddnptaupe": "#cec6a5",
+        "ddnpgrey": "#506859",
+        "ddnpgreen": "#b5d0b6", 
+      }
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
+
+// 6d9fd7 - blue
+// cec6a5 - taupe background
+// 506859 - grey green
+// b5d0b6 - green from wix
+
