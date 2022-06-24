@@ -18,8 +18,6 @@ export default function Home() {
         className={"px-20 py-0 flex-1 flex-col justify-center items-center"}
       >
         <Header />
-        <p className={"text-center leading-tight text-2xl"}>Subtitle</p>
-
         <div
           className={
             "flex items-center justify-center flex-wrap max-w-screen-lg mt-12"
