@@ -19,8 +19,7 @@ export default function Home() {
         className={"px-20 py-0"}
       >
         <Header />
-        <body>
-          <div className={"relative aspect-w-3 aspect-h-1 h-[60vh] mt-12 m-auto"}>
+          <section className={"relative aspect-w-3 aspect-h-1 h-[60vh] mt-12 m-auto"}>
             {/* it would be nice to actually have this image as a background with a text overlay on one side*/}
            <Image 
             src="https://upload.wikimedia.org/wikipedia/commons/4/44/Dickens_dream.jpg" 
@@ -28,28 +27,27 @@ export default function Home() {
             layout="fill"
             objectFit="contain"
             />
-          </div>
-        </body>
-        <div
-          className={
-            "flex items-center justify-center flex-wrap max-w-screen-lg mt-12"
-          }
-        >
-          <Link href="david-copperfield">
-            <a
-              className={
-                "m-4 p-6 text-left border-solid border-2 border-gray-200 rounded-lg w-2/4 transition-colors ease-in-out"
-              }
-            >
-              <h2 className="text-2xl mb-4">David Copperfield &rarr;</h2>
-              <p className="m-0 text-xl leading-normal">
-                <Link href="david-copperfield">
-                  <a>Working Notes</a>
-                </Link>
-              </p>
-            </a>
-          </Link>
-        </div>
+          </section>
+          <section
+            className={
+              "flex items-center justify-center flex-wrap max-w-screen-lg mt-12"
+            }
+          >
+            <Link href="david-copperfield">
+              <a
+                className={
+                  "m-4 p-6 text-left border-solid border-2 border-gray-200 rounded-lg w-2/4 transition-colors ease-in-out"
+                }
+              >
+                <h2 className="text-2xl mb-4">David Copperfield &rarr;</h2>
+                <p className="m-0 text-xl leading-normal">
+                  <Link href="david-copperfield">
+                    <a>Working Notes</a>
+                  </Link>
+                </p>
+              </a>
+            </Link>
+          </section>
       </main>
       <Footer />
 
