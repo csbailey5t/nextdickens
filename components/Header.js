@@ -98,7 +98,7 @@ export default function Header() {
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:flex-1">
             <a href="#">
-              <h1 className="">Digital Dickens Notes Project</h1>
+              <h1 className="font-">Digital Dickens Notes Project</h1>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">

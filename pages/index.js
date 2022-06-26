@@ -18,6 +18,17 @@ export default function Home() {
         className={"px-20 py-0 flex-1 flex-col justify-center items-center"}
       >
         <Header />
+        <body>
+          <div className={"relative aspect-w-3 aspect-h-1 h-[60vh] mt-12 m-auto"}>
+            {/* it would be nice to actually have this image as a background with a text overlay on one side*/}
+           <Image 
+            src="https://upload.wikimedia.org/wikipedia/commons/4/44/Dickens_dream.jpg" 
+            alt="Digital Dickens Notes Project" 
+            layout="fill"
+            objectFit="contain"
+            />
+          </div>
+        </body>
         <div
           className={
             "flex items-center justify-center flex-wrap max-w-screen-lg mt-12"
